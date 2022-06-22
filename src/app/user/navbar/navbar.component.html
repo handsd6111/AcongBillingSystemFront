@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/"><img src="assets/mainlogo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" [ngClass]="{'active': this.currentUrl === '/money'}"
+            routerLink="/money">錢包</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="/accountBook" [ngClass]="{'active': this.currentUrl === '/accountBook'}">記帳</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Hi! {{ this.userName }}
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">個人頁面</a></li>
+            <li><a class="dropdown-item" href="#">設定</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" style="cursor: pointer;" (click)="logout()">登出</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

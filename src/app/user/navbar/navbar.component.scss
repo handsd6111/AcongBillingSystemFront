@@ -1,0 +1,54 @@
+.navbar {
+    // font-weight: bold;
+
+    // height: 4rem;
+    // padding: 0;
+    // background-color: #1976d2;
+    box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+
+    .container-fluid {
+
+        .navbar-brand {
+            margin: 0 2rem 0 1rem;
+
+            img {
+                height: 3rem;
+            }
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: black;
+
+                }
+
+                .active {
+                    background-color: #eee;
+                    border-radius: 0.5rem;
+                    // font-weight: bold;
+                    // color:white;
+                }
+
+                margin: auto 1rem;
+
+                :hover {
+                    border-radius: 0.5rem;
+                    background-color: #ddd;
+                }
+            }
+
+            .dropdown {
+                .dropdown-menu {
+                    // border-radius: 0;
+                }
+                
+                
+                :hover {
+                    background-color: #fff;
+                }
+            }
+
+        }
+    }
+}
