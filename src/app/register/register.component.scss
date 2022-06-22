@@ -1,0 +1,54 @@
+.bg {
+    height: 100vh;
+
+    .input-form {
+        // border-radius: 1rem;
+        box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+        padding: 1rem 1.5rem;
+
+        .title {
+            font-size: 2.4rem;
+            margin: 2rem 0 1.3rem;
+        }
+
+        .sub-title {
+            font-size: 1.3rem;
+            margin: 0 0 0.5rem;
+        }
+
+        .hint-text {
+            font-size: 0.9rem;
+            margin: 0 0 1rem;
+        }
+
+        .form-floating {
+            margin: 0.5rem 0;
+            input {
+                border: none;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            .under-line {
+                width: calc(100% - 1.4rem);
+                left: 0.7rem;
+                position: absolute;
+                bottom: 0.3rem;
+                background-color: black;
+                height: 1px;
+            }
+        }
+
+        .hint-supertext {
+            font-size: 0.9rem;
+            margin:0 0.5rem;
+        }
+
+        .btn {
+            margin: 2rem 0 1.5rem;
+            border-radius: 0;
+        }
+    }
+}
