@@ -28,7 +28,7 @@
             </div>
             <div class="form-floating w-100">
                 <input type="password" [(ngModel)]="confirm" class="form-control" id="floatingInput"
-                    placeholder="password">
+                    placeholder="password" (keyup.enter)="register()">
                 <label for="floatingInput">Confirm</label>
                 <div class="under-line"></div>
             </div>
